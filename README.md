@@ -1,31 +1,35 @@
-# "Face Mask Detection with CNN (Convolutional Neural Networks)"
-<p align="left"> <img src="https://www.logmask.com/images/mask-detection-sample.jpg" height="350px" /> </p>
+Face Mask Detection using CNN
 
-### Problem Statement and Business Case:-
-As Predicted by scientists, many new deadly diseases will be born in the next 10 years. Just like Coronavirus disease (COVID-19), the best thing to do with these diseases is to take precaution, use sanitizer and use face masks.Wearing a face mask will help prevent the spread of infection and prevent the individual from contracting any airborne infectious germs. When someone coughs, talks, sneezes they could release germs into the air that may infect others.
+The Face-Mask-Detection system is a deep learning project built using Convolutional Neural Networks (CNNs) to automatically identify whether a person is wearing a face mask or not. This system processes input images (from a camera feed or dataset), extracts features using CNN layers, and classifies them into two categories: “Mask” and “No Mask.”
 
-But the main problem is that people dont take seriously, that how important the mask is. So, to deal with such a problem, A Machine Learning Model has been made which detects people wearing mask or not within seconds, even in the highly crowded public places. Nowadays, wearing a mask is a must, so in every organization, As camera is placed in every organization,  so the model will flag people who didnt wear mask and will give red signal for culprits. and allow people who wears mask.
+Key Features:
 
-### Pre-Requisites / Technologies Used:-
-- Python Programming Language (Intermediate), Deep Learning basic knowledge of CNN and Machine Learning
-- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, OpenCV and tensorflow 
+Uses CNN for image classification, achieving high accuracy in detecting masked/unmasked faces.
 
-### Step_1: Data Pre-Processing of model :-
-- Creating a dataset of 500 images of each with and without mask.
-- Data Cleaning and transformation of data to similar size of 100x100 px.
-- Converting BGR [Blue Green Red] to Grayscale method [Black & White]
-- Visualizing data using graphs like histogram, count-plot, etc.
+Trained on datasets of face images with and without masks.
 
-### Step_2: Training the Model:-
-- We train the Model using CNN Convolutional Neural Network to build the model
-- Used pooling layer, conv2d and other sequential layers to train the model with 64 neurons.
-- Then performing hyper-parameter tuning to the model.
+Preprocessing steps include image resizing, normalization, and augmentation (rotation, flipping, zooming) to improve robustness.
 
-### Step_3: Testing and Measuring the performance of the model:-
-- Splitting the dataset into three parts: Training (80% data) and testing (20% data)
-- Now, train the model using CNN Deep Learning Model
-- Achived Accuracy of 0.94 (94%) on testing dataset 
+Can be integrated with OpenCV for real-time detection through a webcam or CCTV feed.
 
+Lightweight enough to be deployed on edge devices like Raspberry Pi for smart surveillance.
 
-#### **Show 💗 by ⭐ My Repository**
+Workflow:
 
+Data Collection & Preprocessing – Gather images of masked/unmasked faces, apply resizing, grayscale/RGB normalization, and data augmentation.
+
+Model Architecture (CNN) – Multiple convolutional layers with ReLU activation, pooling layers for feature extraction, and dense layers for classification.
+
+Training – Model trained on labeled datasets with categorical cross-entropy loss and Adam optimizer.
+
+Evaluation – Tested on unseen images to measure accuracy, precision, recall, and F1-score.
+
+Deployment – Integrated with OpenCV/Flask/Django for real-time monitoring.
+
+Applications:
+
+Public surveillance in airports, malls, and offices.
+
+Automated monitoring in workplaces, schools, and hospitals.
+
+Edge AI deployment on IoT devices for contactless monitoring.
