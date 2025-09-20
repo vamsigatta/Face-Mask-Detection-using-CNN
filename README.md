@@ -1,4 +1,4 @@
-Face Mask Detection using CNN
+#Face Mask Detection using CNN
 
 The Face-Mask-Detection system is a deep learning project built using Convolutional Neural Networks (CNNs) to automatically identify whether a person is wearing a face mask or not. This system processes input images (from a camera feed or dataset), extracts features using CNN layers, and classifies them into two categories: “Mask” and “No Mask.”
 
